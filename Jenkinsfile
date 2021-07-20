@@ -6,12 +6,14 @@ pipeline {
           {
                    steps
                    { 
-                         sh 'echbh'
+                         sh 'exit 0'
                    }
           } 
                   stage ("slack")
           {
                    steps
+                    catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh "exit 1"
                    { 
                         slackSend channel: '#venkat',
             color: 'good',
