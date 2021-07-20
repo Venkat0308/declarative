@@ -8,7 +8,7 @@ pipeline {
                          sh 'echo $JAVA_HOME'
                    }
           } 
-                  stage ("shell execute")
+                  stage ("slack")
           {
                    steps
                    { 
