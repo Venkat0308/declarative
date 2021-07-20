@@ -1,6 +1,6 @@
-pipeline{
+pipeline {
          agent any
-         stages{
+         stages {
                   stage ("shell execute")
           {
                    steps
@@ -17,3 +17,4 @@ pipeline{
           } 
          
         }
+}
