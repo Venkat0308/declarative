@@ -15,8 +15,8 @@ pipeline {
                    steps
                    { 
                         slackSend channel: '#venkat',
-                color: COLOR_MAP[currentBuild.currentResult],
-                message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} by ${BUILD_USER}\n More info at: ${env.BUILD_URL}"
+            color: 'good',
+            message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}\n More info at: ${env.BUILD_URL}"
                    }
           } 
          
