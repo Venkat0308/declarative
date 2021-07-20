@@ -12,7 +12,7 @@ pipeline{
           {
                    steps
                    { 
-                        slackSend color: "#439FE0", message: "Build Started: ${env.JOB_NAME} ${env.BUILD_NUMBER}"
+                        slackSend channel: 'venkat', color: "#439FE0", message: "Build Started: ${env.JOB_NAME} ${env.BUILD_NUMBER}"
                    }
           } 
          }
