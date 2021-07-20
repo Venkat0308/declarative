@@ -1,3 +1,5 @@
+def COLOR_MAP = [...]
+def getBuildUser(){...}
 pipeline {
          agent any
          stages {
